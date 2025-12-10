@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pokedex/Detail_page.dart';
 import 'package:pokedex/model/dummyData.dart';
-
 import 'package:pokedex/shared/widget/pokemon_card_widget.dart';
 
 class HomePage extends StatefulWidget {
@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
             style: TextStyle(
               fontSize: 34,
               fontWeight: FontWeight.bold,
-              color: Colors.grey,
+              color: const Color.fromARGB(255, 0, 0, 0),
             ),
           ),
           Text(
@@ -100,9 +100,15 @@ class _HomePageState extends State<HomePage> {
         itemCount: dummyPokemonList.length,
         itemBuilder: (context, index) {
           return PokemonCardWidget(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => DetailPage()),
+              );
+            },
             imageUrl: dummyPokemonList[index].imageurl,
             name: dummyPokemonList[index].name,
-            type: dummyPokemonList[index].type, onTap: () {  },
+            type: dummyPokemonList[index].type,
           );
         },
       ),

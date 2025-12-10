@@ -29,6 +29,7 @@ final List<Pokemon> dummyPokemonList = [
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png',
     type: 'Fire',
   ),
+
   Pokemon(
     id: 5,
     name: 'Charmeleon',
@@ -36,6 +37,7 @@ final List<Pokemon> dummyPokemonList = [
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png',
     type: 'Fire',
   ),
+
   Pokemon(
     id: 6,
     name: 'Charizard',
@@ -43,6 +45,7 @@ final List<Pokemon> dummyPokemonList = [
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png',
     type: 'Fire',
   ),
+
   Pokemon(
     id: 7,
     name: 'Squirtle',
@@ -50,6 +53,7 @@ final List<Pokemon> dummyPokemonList = [
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png',
     type: 'Water',
   ),
+
   Pokemon(
     id: 8,
     name: 'Wartortle',
@@ -57,4 +61,5 @@ final List<Pokemon> dummyPokemonList = [
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png',
     type: 'Water',
   ),
+  // Add more Pokemon as needed
 ];
