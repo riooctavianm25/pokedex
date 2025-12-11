@@ -34,8 +34,8 @@ class PokemonCardWidget extends StatelessWidget {
             ),
             SizedBox(height: 5),
             Text(
-              'Type: $type',
-              style: TextStyle(fontSize: 16, color: Colors.grey[600]),
+              '$type',
+              style: TextStyle(fontSize: 16, color: const Color.fromARGB(255, 0, 0, 0)),
             ),
           ],
         ),
