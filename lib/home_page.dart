@@ -107,7 +107,6 @@ class _HomePageState extends State<HomePage> {
                   imageUrl: dummyPokemonList[index].imageurl, 
                   name: dummyPokemonList[index].name, 
                   type: dummyPokemonList[index].type, 
-                  id: dummyPokemonList[index].id,
                   ),
                 ),
               );
