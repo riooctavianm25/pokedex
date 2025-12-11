@@ -4,11 +4,9 @@ class DetailPage extends StatefulWidget {
   final String imageUrl;
   final String name;
   final String type;
-  final int id;
   
   const DetailPage({
-    super.key,
-    required this.id, 
+    super.key, 
     required this.imageUrl, 
     required this.name, 
     required this.type,
@@ -32,14 +30,40 @@ class _DetailPageState extends State<DetailPage> {
                   Align(
                     alignment: Alignment.centerLeft,
                     child: IconButton(
-                      icon: Icon(Icons.arrow_back),
+                      icon: const Icon(Icons.arrow_back),
                       onPressed: () => Navigator.pop(context) 
                     ),
                   ),
                   Column(
                     children: [
                       Text(widget.name, style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
-                      Text(widget.type, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)) 
+                      Text(widget.type, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+
+                      SizedBox(height: 20),
+
+                      Container(
+                        height: 200,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20)
+                        ),
+                        child: Center(
+                          child: Image.network(
+                            widget.imageUrl,
+                            height: 300,
+                            fit: BoxFit.contain,
+                          ),
+                        ),
+                      ),
+
+                      SizedBox(height: 20),
+
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("Forms"),
+                          Text("Forms"),
+                        ],
+                      )
                     ],
                   )
                 ],
